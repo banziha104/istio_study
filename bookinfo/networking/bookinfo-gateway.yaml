@@ -36,6 +36,12 @@ spec:
         exact: /logout
     - uri:
         prefix: /api/v1/products
+#    rewrite:
+#      uri: /v1/bookRatings
+#    headers:
+#      request:
+#        add:
+#          test: "1234567890"
     route:
     - destination:
         host: productpage
